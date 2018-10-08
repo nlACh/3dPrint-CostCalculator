@@ -1,0 +1,28 @@
+﻿<Window x:Class="_3dPrint_CostCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3dPrint_CostCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="800">
+    <Grid>
+
+        <Canvas HorizontalAlignment="Left" Height="230" Margin="5,5,0,0" VerticalAlignment="Top" Width="780">
+            <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Size" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="75" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Cost" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="115" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Density" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="155" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Diameter" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="195" FontSize="18"/>
+            <TextBlock Height="55" Canvas.Left="10" TextWrapping="Wrap" Text="FILAMENT" Canvas.Top="10" Width="170" FontSize="36"/>
+        </Canvas>
+
+        <Canvas HorizontalAlignment="Left" Height="200" Margin="5,0,0,5" VerticalAlignment="Bottom" Width="780">
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="PRINT" Canvas.Top="10" FontSize="36"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Time" Canvas.Top="75" FontSize="18"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Labor" Canvas.Top="115" FontSize="18"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Post" Canvas.Top="155" FontSize="18"/>
+            <TextBlock Canvas.Right="350" TextWrapping="Wrap" Text="Pre" Canvas.Top="155" FontSize="18"/>
+        </Canvas>
+
+    </Grid>
+</Window>
