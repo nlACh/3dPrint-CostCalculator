@@ -22,5 +22,17 @@ namespace _3dPrint_CostCalculator
         {
             InitializeComponent();
         }
+
+        //Event handler for the settings button
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Den.Text = "0";
+            Cost.Text = "0";
+            Size.Text = "0";
+            Dia.Text = "0";
+            Sett_ sett_ = new Sett_();
+            sett_.Show();
+            //this.Hide();
+        }
     }
 }

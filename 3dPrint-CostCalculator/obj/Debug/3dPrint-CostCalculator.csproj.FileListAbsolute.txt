@@ -12,3 +12,5 @@ C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\De
 C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.csproj.CoreCompileInputs.cache
 C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.exe
 C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.pdb
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\Sett_.g.cs
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\Sett_.baml

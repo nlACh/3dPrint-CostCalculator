@@ -15,11 +15,11 @@
             <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Density" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="155" FontSize="18"/>
             <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Diameter" VerticalAlignment="Top" Width="120" Canvas.Left="10" Canvas.Top="195" FontSize="18"/>
             <TextBlock Height="55" Canvas.Left="10" TextWrapping="Wrap" Text="FILAMENT" Canvas.Top="10" Width="170" FontSize="36"/>
-            <TextBox BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="157" Width="120" Text="g/cc"/>
-            <TextBox BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="197" Width="120" Text="mm"/>
-            <TextBox BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="117" Width="120" Text="NaN"/>
-            <TextBox BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="77" Width="120" Text="Kg"/>
-            <Button Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" Canvas.Left="722" Canvas.Top="10" Width="48" Height="48" RenderTransformOrigin="1.208,0.561">
+            <TextBox Name="Den"  BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="157" Width="120" Text="g/cc"/>
+            <TextBox Name="Dia"  BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="197" Width="120" Text="mm"/>
+            <TextBox Name="Cost"  BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="117" Width="120" Text="NaN"/>
+            <TextBox Name="Size"  BorderThickness="0" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="77" Width="120" Text="Kg"/>
+            <Button Name="Settings" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderThickness="0" Canvas.Left="722" Canvas.Top="10" Width="48" Height="48" RenderTransformOrigin="1.208,0.561" Click="Settings_Click">
                 <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/settings.png" Height="32" Width="32"/>
                     </StackPanel>

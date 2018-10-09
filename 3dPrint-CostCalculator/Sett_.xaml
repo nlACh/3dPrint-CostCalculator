@@ -1,0 +1,13 @@
+﻿<Window x:Class="_3dPrint_CostCalculator.Sett_"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3dPrint_CostCalculator"
+        mc:Ignorable="d"
+        Title="Settings" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Hey There! Welcome from main window. Click on OK/Save DUMMY PAGE" Margin="10,10,10,10" TextWrapping="Wrap" Height="45" Width="350" Padding="5,5,5,5"/>
+        <Button Name="OK" Width="48" Height="48" Margin="10,10,734,361" Click="OK_Click" Content="BACK"/>
+    </Grid>
+</Window>
