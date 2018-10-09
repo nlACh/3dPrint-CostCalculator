@@ -21,7 +21,6 @@ namespace _3dPrint_CostCalculator
 
         private void OK_Click(object sender, RoutedEventArgs e)
         {
-            //MainWindow mainWindow = new MainWindow();
             this.Close();
         }
     }

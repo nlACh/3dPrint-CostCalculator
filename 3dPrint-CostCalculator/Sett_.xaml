@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3dPrint_CostCalculator"
         mc:Ignorable="d"
-        Title="Settings" Height="450" Width="800">
+        Title="Settings" Height="480" Width="800">
     <Grid>
-        <TextBlock Text="Hey There! Welcome from main window. Click on OK/Save DUMMY PAGE" Margin="10,10,10,10" TextWrapping="Wrap" Height="45" Width="350" Padding="5,5,5,5"/>
-        <Button Name="OK" Width="48" Height="48" Margin="10,10,734,361" Click="OK_Click" Content="BACK"/>
+        <Canvas HorizontalAlignment="Left" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="770">
+            <Button Content="Save" Canvas.Right="20" Canvas.Bottom="20" Width="50" Click="OK_Click"/>
+            <TextBlock Canvas.Left="123.625" TextWrapping="Wrap" Text="Settings1" Canvas.Top="56.259"/>
+            <TextBlock Canvas.Left="124" TextWrapping="Wrap" Text="Settings2" Canvas.Top="100.189"/>
+            <TextBox Height="23" Canvas.Left="206.473" TextWrapping="Wrap" Text="S1" Canvas.Top="49" Width="120"/>
+            <TextBox Height="23" Canvas.Left="206" TextWrapping="Wrap" Text="S2" Canvas.Top="93" Width="120"/>
+        </Canvas>
     </Grid>
 </Window>
