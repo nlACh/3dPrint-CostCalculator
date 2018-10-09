@@ -17,10 +17,19 @@ namespace _3dPrint_CostCalculator
     /// </summary>
     public partial class Sett_ : Window
     {
-        public Sett_() => InitializeComponent();
+        public Sett_()
+        {
+            InitializeComponent();
+            s1.Text = Properties.Settings.Default.s1.ToString();
+            s2.Text = Properties.Settings.Default.s2.ToString();
+        }
 
         private void OK_Click(object sender, RoutedEventArgs e)
         {
+            Properties.Settings.Default.s1 = Convert.ToDouble(s1.Text);
+            Properties.Settings.Default.s2 = Convert.ToDouble(s2.Text);
+
+            Properties.Settings.Default.Save();
             this.Close();
         }
     }

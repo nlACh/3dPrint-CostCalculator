@@ -1,0 +1,17 @@
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\bin\Debug\3dPrint-CostCalculator.exe
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\bin\Debug\3dPrint-CostCalculator.pdb
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.csprojAssemblyReference.cache
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\App.g.cs
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator_MarkupCompile.cache
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator_MarkupCompile.lref
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\MainWindow.baml
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.g.resources
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\_3dPrint_CostCalculator.Properties.Resources.resources
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.csproj.GenerateResource.cache
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.csproj.CoreCompileInputs.cache
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.exe
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\3dPrint-CostCalculator.pdb
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\Sett_.g.cs
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\obj\Debug\Sett_.baml
+C:\Users\nlpl9\source\repos\3dPrint-CostCalculator\3dPrint-CostCalculator\bin\Debug\3dPrint-CostCalculator.exe.config

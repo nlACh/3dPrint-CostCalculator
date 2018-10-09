@@ -58,20 +58,27 @@ namespace _3dPrint_CostCalculator
         private void Cal_Click(object sender, RoutedEventArgs e)
         {
             //The following 4 lines get values from textboxes
-            size = Convert.ToDouble(Size.Text);
-            cost = Convert.ToDouble(Cost.Text);
-            density = Convert.ToDouble(Den.Text);
-            dia = Convert.ToDouble(Dia.Text);
+            try
+            {
+                size = Convert.ToDouble(Size.Text);
+                cost = Convert.ToDouble(Cost.Text);
+                density = Convert.ToDouble(Den.Text);
+                dia = Convert.ToDouble(Dia.Text);
+            }
+            catch(Exception ex)
+            {
+                Size.Text = ex.ToString();
+            }
 
             //Now use these values to find cost per length and cost per gram
             cpl = CPL(size, cost, density, dia);
-            cpg = cost / size; //in terms of currency per Kg
+            cpg = cost / (size*1000); //in terms of currency per gram
 
             /* Reflect those values temporarily to the UI
              * Later we will just use these values!
              */
-            Cpg.Text = cpg.ToString();
-            Cpl.Text = cpl.ToString();
+            Cpg.Text = cpg.ToString()+"per gram";
+            Cpl.Text = cpl.ToString()+"per meter";
         }
 
         private Double CPL(Double si, Double c, Double den, Double di)
