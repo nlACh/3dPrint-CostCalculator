@@ -25,25 +25,25 @@ namespace _3dPrint_CostCalculator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("12")]
-        public double s1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public double electro_tarrif {
             get {
-                return ((double)(this["s1"]));
+                return ((double)(this["electro_tarrif"]));
             }
             set {
-                this["s1"] = value;
+                this["electro_tarrif"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("13.2")]
-        public double s2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("120")]
+        public int power {
             get {
-                return ((double)(this["s2"]));
+                return ((int)(this["power"]));
             }
             set {
-                this["s2"] = value;
+                this["power"] = value;
             }
         }
     }

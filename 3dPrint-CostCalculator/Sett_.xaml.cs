@@ -20,14 +20,14 @@ namespace _3dPrint_CostCalculator
         public Sett_()
         {
             InitializeComponent();
-            s1.Text = Properties.Settings.Default.s1.ToString();
-            s2.Text = Properties.Settings.Default.s2.ToString();
+            s1.Text = Properties.Settings.Default.electro_tarrif.ToString();
+            s2.Text = Properties.Settings.Default.power.ToString();
         }
 
         private void OK_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.s1 = Convert.ToDouble(s1.Text);
-            Properties.Settings.Default.s2 = Convert.ToDouble(s2.Text);
+            Properties.Settings.Default.electro_tarrif = Convert.ToDouble(s1.Text);
+            Properties.Settings.Default.power = Convert.ToInt32(s2.Text);
 
             Properties.Settings.Default.Save();
             this.Close();

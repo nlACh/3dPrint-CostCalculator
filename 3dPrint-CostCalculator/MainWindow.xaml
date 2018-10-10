@@ -27,6 +27,7 @@
             <Button Content="Calculate" Canvas.Left="695" Canvas.Top="200" Width="75" Name="Cal" Click="Cal_Click"/>
             <TextBlock Name="Cpg" Canvas.Left="554.058" TextWrapping="Wrap" Text="Cost Per Gram" Canvas.Top="77"/>
             <TextBlock Name="Cpl" Canvas.Left="554" TextWrapping="Wrap" Text="Cost Per Length" Canvas.Top="115"/>
+            <TextBlock Name="powCst" Canvas.Left="554" TextWrapping="Wrap" Text="PowerCost" Canvas.Top="157"/>
         </Canvas>
 
         <Canvas HorizontalAlignment="Left" Height="200" Margin="5,0,0,5" VerticalAlignment="Bottom" Width="780">
@@ -37,8 +38,8 @@
             <TextBlock Canvas.Right="350" TextWrapping="Wrap" Text="Pre" Canvas.Top="155" FontSize="18"/>
             <TextBox Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="116" Width="120" BorderThickness="0" Text="per hh"/>
             <TextBox Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="156" Width="120" BorderThickness="0" Text="mins"/>
-            <TextBox Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="75" Width="60" BorderThickness="0" Text="hh"/>
-            <TextBox Height="23" Canvas.Left="200" TextWrapping="Wrap"  Canvas.Top="75" Width="60" BorderThickness="0" Text="mins"/>
+            <TextBox Name="hrs" Height="23" Canvas.Left="135" TextWrapping="Wrap"  Canvas.Top="75" Width="60" BorderThickness="0" Text="hh" PreviewTextInput="Check_Input"/>
+            <TextBox Name="mins" Height="23" Canvas.Left="200" TextWrapping="Wrap"  Canvas.Top="75" Width="60" BorderThickness="0" Text="mins" PreviewTextInput="Check_Input"/>
             <TextBox Height="23" Canvas.Left="510" TextWrapping="Wrap"  Canvas.Top="156" Width="120" BorderThickness="0" Text="mins"/>
         </Canvas>
 

@@ -46,12 +46,10 @@ namespace _3dPrint_CostCalculator
         //Event handler for the settings button
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            Den.Text = "0";
-            Cost.Text = "0";
-            Size.Text = "0";
-            Dia.Text = "0";
             Sett_ sett_ = new Sett_();
-            sett_.Show();
+            sett_.ShowDialog();
+            //Don't hide this window, rather freeze it while the
+            //settings window opens
             //this.Hide();
         }
 
@@ -70,17 +68,21 @@ namespace _3dPrint_CostCalculator
                 Size.Text = ex.ToString();
             }
 
-            //Now use these values to find cost per length and cost per gram
+            //Now use these values to find cost per length
             cpl = CPL(size, cost, density, dia);
             cpg = cost / (size*1000); //in terms of currency per gram
 
             /* Reflect those values temporarily to the UI
              * Later we will just use these values!
              */
-            Cpg.Text = cpg.ToString()+"per gram";
-            Cpl.Text = cpl.ToString()+"per meter";
+            Cpg.Text = cpg.ToString()+" per gram";
+            Cpl.Text = cpl.ToString()+" per meter";
+            Electricity();
         }
 
+        /*THIS FUNCTION CALCULATES COST PER LENGTH OF FILAMENT
+         * USEFUL FOR CHARGING PER MATERIAL COST
+         */
         private Double CPL(Double si, Double c, Double den, Double di)
         {
             Double area = Math.PI * (di / 10)*(di / 10)/4; //converted to cm2
@@ -88,6 +90,20 @@ namespace _3dPrint_CostCalculator
             Double length = (si * 1000) / massPerLength; //converted Kg to grams and then get total length in cm
             Double cp_l = c / (length / 1000); //length to meter then cost per meter
             return cp_l;
+        }
+
+        private void Electricity()
+        {
+            Double tarrif = Properties.Settings.Default.electro_tarrif;
+            int watt = Properties.Settings.Default.power;
+            //Take the estimated print time from user
+            //Convert those hours and minutes data to hours completely
+            Double time = Convert.ToInt32(hrs.Text) + Convert.ToInt32(mins.Text) / 60; //Some implicit conversions will occur!
+            Double pow = time * (watt / 1000), powCost; //This gives results in kWh
+            //Energy tarrif in terms of money per kWh
+            //So just multiply to get power cost
+            powCost = tarrif * pow;
+            powCst.Text = powCost.ToString() + " power cost";
         }
     }
 }
